@@ -29,7 +29,8 @@ def main(request):
 
 def show(request):
     curriculum = Curriculum.objects.all()
-    result = ''
-    for c in curriculum:
-       result += c.name + '<br>'
-    return HttpResponse(result)
+#     result = ''
+#     for c in curriculum:
+#        result += c.name + '<br>'
+#     return HttpResponse(result)
+    return render(request, 'secondapp/show.html',{'data' : curriculum})

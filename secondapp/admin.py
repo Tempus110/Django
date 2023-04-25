@@ -1,3 +1,4 @@
 from django.contrib import admin
+import secondapp.models
 
-# Register your models here.
+admin.site.register(secondapp.models.Army_shop)

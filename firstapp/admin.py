@@ -1,3 +1,4 @@
 from django.contrib import admin
+import firstapp.models
 
-# Register your models here.
+admin.site.register(firstapp.models.Curriculum)
